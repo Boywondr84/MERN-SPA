@@ -9,7 +9,7 @@ function About() {
             <div className="row">
                 <div className="about">
                     <div className="hero">
-                        <Typography mr={3}>
+                        <Typography mr={3} fontSize={'20px'}>
                             Quick Cookies started out as a simple coding project but has rapidly grown into a multi-million dollar online business.<br></br><br></br>
                             With award winning, fresh cookies delivered to your door, there's no reason not to join the club!<br></br><br></br>
                             No more wondering what to bring to the company holiday party, the neighborhood block party or your next birthday celebration!<br></br><br></br>

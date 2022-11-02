@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
@@ -26,8 +26,8 @@ const style = {
 
 export default function CookieModal(props) {
     const cookies = props.cookies;
-    
-    
+
+
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -67,63 +67,62 @@ export default function CookieModal(props) {
                         <h3>{cookie.description}</h3>
                     </div>
                 ))}
-                
-                    <TableContainer>
-                        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                            <TableHead>
-                                <TableRow>
-                                    <TableCell>Cookie</TableCell>
-                                    <TableCell align="right">Calories</TableCell>
-                                    <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                                    <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                                    <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                <TableContainer>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>Cookie</TableCell>
+                                <TableCell align="right">Calories</TableCell>
+                                <TableCell align="right">Fat&nbsp;(g)</TableCell>
+                                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+                                <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {cookies.map((cookie) => (
+
+                                // {cookies.filter(cookie => cookie.id).map(filteredCookie => (
+                                <TableRow
+                                    key={cookie.id}
+                                    sx={{ '&:last=child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <TableCell component="th" scope="row">
+                                        {cookie.name}
+                                    </TableCell>
+                                    <TableCell align="right">{cookie.calories}</TableCell>
+                                    <TableCell align="right">{cookie.fat}</TableCell>
+                                    <TableCell align="right">{cookie.carbs}</TableCell>
+                                    <TableCell align="right">{cookie.protein}</TableCell>
                                 </TableRow>
-                            </TableHead>
-                            <TableBody>
-            {cookies.map((cookie) => (
-            
-            // {cookies.filter(cookie => cookie.id).map(filteredCookie => (
-                    <TableRow
-                        key={cookie.id}
-                        sx={{ '&:last=child td, &:last-child th': { border: 0 } }}
-                    >
-                        <TableCell component="th" scope="row">
-                            {cookie.name}
-                        </TableCell>
-                        <TableCell align="right">{cookie.calories}</TableCell>
-                        <TableCell align="right">{cookie.fat}</TableCell>
-                        <TableCell align="right">{cookie.carbs}</TableCell>
-                        <TableCell align="right">{cookie.protein}</TableCell>
-                    </TableRow>
-                    ))}
-                </TableBody>
-                </Table>
+                            ))}
+                        </TableBody>
+                    </Table>
                 </TableContainer>
                 <div>
-                {cookies.map((cookie) => (
-                    <div>
-                        <h3>Price: ${cookie.price} / dozen cookies</h3>
-                    </div>
-                ))}
+                    {cookies.map((cookie) => (
+                        <div>
+                            <h3>Price: ${cookie.price} / dozen cookies</h3>
+                        </div>
+                    ))}
                 </div>
                 <Button onClick={handleOpen}>Add Your Review</Button>
                 <Modal
-                hideBackdrop
-                open={open}
-                onClose={handleClose}
+                    hideBackdrop
+                    open={open}
+                    onClose={handleClose}
                 >
-                    <Box sx={{...style, width: 500 }}>
+                    <Box sx={{ ...style, width: 500 }}>
                         <TextField label="Add Review Here: " variant="standard" />
                         <form onSubmit={handleSubmit(cookieReviews)}>
                             <div>
-                                <TextField {...register("review", { required: true})} />
+                                <TextField {...register("review", { required: true })} />
                             </div>
                             <div>
                                 <Button type="submit">Leave Review</Button>
                             </div>
                         </form>
                         <Button onClick={handleClose}>Close The Reviews</Button>
-                        
+
                         {/* <ReviewForm /> */}
                     </Box>
                 </Modal>
@@ -131,12 +130,12 @@ export default function CookieModal(props) {
                     <div>
                         <div id="reviewEl">
                             <h4>Reviews:</h4>
-                            <ul>"{cookie.reviews}"</ul>    
+                            <ul>"{cookie.reviews}"</ul>
                         </div>
                     </div>
                 ))}
-                </Box>
-                </div>
+            </Box>
+        </div>
     )
 }
 

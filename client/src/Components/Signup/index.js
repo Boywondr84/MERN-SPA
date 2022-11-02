@@ -34,7 +34,7 @@ const Signup = () => {
         }
     };
 
-    const containerStyle = {display: 'flex', marginTop: '10%'}
+    const containerStyle = { display: 'flex', marginTop: '10%' }
     const paperStyle = { padding: 20, height: '50vh', width: 280, margin: "20px auto" }
     const avatarStyle = { backgroundColor: '#1bbd7e' }
     const btnstyle = { margin: '8px 0' }

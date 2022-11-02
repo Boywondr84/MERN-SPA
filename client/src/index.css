@@ -13,7 +13,7 @@ code {
 }
 
 .nav-item {
-  list-style: none; 
+  list-style: none;
 }
 
 a {
@@ -35,6 +35,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -42,9 +43,11 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.hero{
-  width: 50%
+
+.hero {
+  width: 50%;
 }
+
 .about {
   margin-top: 7%;
   display: flex;
@@ -61,9 +64,10 @@ h1 {
   width: 50%;
 
 }
-.sideBanner img{
+
+.sideBanner img {
   height: auto;
-  width: 110%;
+  width: 100%;
 }
 
 .about p {
@@ -72,7 +76,8 @@ h1 {
 
 .modal-title {
   margin-top: 12%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-image img {
@@ -80,8 +85,9 @@ h1 {
   width: 180px;
 }
 
-.contact-form, .order-form {
-  margin-top: 9%; 
+.contact-form,
+.order-form {
+  margin-top: 9%;
   /* margin-left: 35%; */
   text-align: center;
 }
@@ -92,7 +98,8 @@ h1 {
   color: rgb(19, 110, 110);
 }
 
-.contact-submit, .order-submit{
+.contact-submit,
+.order-submit {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -119,26 +126,31 @@ h1 {
 }
 
 .login-form {
-/* margin-left: 40%; */
-text-align: center;
+  /* margin-left: 40%; */
+  text-align: center;
 }
+
 .signup-form {
-/* margin-left: 40% ; */
-text-align: center;
-margin-bottom: 20px;
+  /* margin-left: 40% ; */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* .login-form,  {
   margin-left: 15%;
   margin-right: 13%;
   /* margin-top: 7%;  */
-  /* display: inline-flex;
+/* display: inline-flex;
   margin-bottom: 20px;
-} */ 
+} */
 
-.password-login, .user-login, .signup-username, .signup-email, .signup-password {
+.password-login,
+.user-login,
+.signup-username,
+.signup-email,
+.signup-password {
   padding: 5px;
-} 
+}
 
 /* this doesnt seem to put space between this and contact/name/email fields  
 .MuiPaper-root {
@@ -152,19 +164,22 @@ margin-bottom: 20px;
 
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
 
-  .about{
+  .about {
     flex-direction: column
   }
-  
-  .hero, .sideBanner{
+
+  .hero,
+  .sideBanner {
     width: 100%
   }
-  .sideBanner{
+
+  .sideBanner {
     text-align: center;
   }
-  .sideBanner img{
+
+  .sideBanner img {
     width: 100%
   }
 

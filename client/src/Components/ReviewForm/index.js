@@ -8,7 +8,7 @@ const ReviewForm = () => {
     const [characterCount, setCharacterCount] = useState(0);
     const [open, setOpen] = React.useState(false);
     // const { register, handleSubmit, reset, formState} = useForm();
-    
+
     // const { register, handleSubmit } = useForm();
     // const onSubmit = (event, data) => {
     //     if (event.target.value.length <= 50) {
@@ -50,12 +50,12 @@ const ReviewForm = () => {
     };
 
     const [addReview, { error }] = useMutation(ADD_REVIEW, {
-        update(cache, { data: { addReview }}) {
+        update(cache, { data: { addReview } }) {
             try {
                 const { cookie } = cache.readQuery({ query: QUERY_REVIEWS });
                 cache.writeQuery({
                     query: QUERY_REVIEWS,
-                    data: { cookie: {...cookie, reviews: [...cookie.reviews, addReview]}},
+                    data: { cookie: { ...cookie, reviews: [...cookie.reviews, addReview] } },
                 });
             } catch (e) {
                 console.error(e);
@@ -65,7 +65,7 @@ const ReviewForm = () => {
 
             cache.writeQuery({
                 query: ADD_REVIEW,
-                data: { reviews: [addReview, ...reviews]}
+                data: { reviews: [addReview, ...reviews] }
             });
         }
     });

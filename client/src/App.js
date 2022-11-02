@@ -1,7 +1,7 @@
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import React from 'react';
 import Project3 from './Project3';
-import {setContext} from '@apollo/client/link/context';
+import { setContext } from '@apollo/client/link/context';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -22,10 +22,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-const App= () => (
+const App = () => (
   <div>
     <ApolloProvider client={client}>
-    <Project3 />
+      <Project3 />
     </ApolloProvider>
   </div>
 )
