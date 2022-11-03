@@ -10,7 +10,7 @@ import Signup from './Components/Signup';
 import Login from './Components/Login';
 import Order from './Components/Order';
 import Auth from './utils/auth';
-import { Link } from 'react-router-dom';
+
 
 function Project() {
     const initialPage = window.location.hash || '#about'
@@ -64,7 +64,7 @@ function Project() {
                     {Auth.loggedIn() ? (
                         <>
 
-                            <Button color="inherit" href="/" onClick={logout}>
+                            <Button color="inherit" href="#about" onClick={logout}>
                                 Logout
                             </Button>
                         </>

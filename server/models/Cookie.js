@@ -1,7 +1,6 @@
 const { Schema, model } = require("mongoose");
 const reviewSchema = require("./Review");
 
-
 const cookieSchema = new Schema(
   {
     cookieName: {

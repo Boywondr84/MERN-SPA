@@ -9,18 +9,12 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Boywondr84/mern-subscription.git"
-  },
+  
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Boywondr84/mern-subscription/issues"
-  },
-  "homepage": "https://github.com/Boywondr84/mern-subscription#readme",
+ 
   "devDependencies": {
-    "concurrently": "^7.5.0"
+    "concurrently": "5.1.0"
   },
   "dependencies": {
     "enoent": "^1.0.0"
