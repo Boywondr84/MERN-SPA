@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mern-subscription/static/css/main.8060ad32.css",
+    "main.js": "/mern-subscription/static/js/main.2094193f.js",
+    "static/js/787.5ec1f859.chunk.js": "/mern-subscription/static/js/787.5ec1f859.chunk.js",
+    "static/media/chocolate.jpg": "/mern-subscription/static/media/chocolate.ca1d91187ad483d0821c.jpg",
+    "static/media/assortmentEdit.jpg": "/mern-subscription/static/media/assortmentEdit.a5cfa86af6a55784b1f4.jpg",
+    "static/media/choco.jpg": "/mern-subscription/static/media/choco.22ff1da802da7aaf4322.jpg",
+    "static/media/gingersnap.jpg": "/mern-subscription/static/media/gingersnap.967c30afab3963eb0d57.jpg",
+    "static/media/snickerdoodle.jpg": "/mern-subscription/static/media/snickerdoodle.d09fab28b2bdb8c70646.jpg",
+    "static/media/oatmeal.jpg": "/mern-subscription/static/media/oatmeal.ccfe3227491702a0347a.jpg",
+    "index.html": "/mern-subscription/index.html",
+    "main.8060ad32.css.map": "/mern-subscription/static/css/main.8060ad32.css.map",
+    "main.2094193f.js.map": "/mern-subscription/static/js/main.2094193f.js.map",
+    "787.5ec1f859.chunk.js.map": "/mern-subscription/static/js/787.5ec1f859.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8060ad32.css",
+    "static/js/main.2094193f.js"
+  ]
+}
