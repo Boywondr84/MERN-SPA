@@ -9,14 +9,14 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
-  
   "author": "",
   "license": "ISC",
- 
   "devDependencies": {
     "concurrently": "5.1.0"
   },
   "dependencies": {
-    "enoent": "^1.0.0"
-  }
+    "enoent": "^1.0.0",
+    "gh-pages": "^4.0.0"
+  },
+  "homepage": "https://github.com/Boywondr84/mern-subscription"
 }

@@ -22,7 +22,12 @@ We created an application that sells cookies through a subscription.
 After cloning the repository, run npm install from the root directory to install npm packages. Then run npm run build to start up the server side and client side concurrently.
 
 ## Website:
-https://glacial-anchorage-99697.herokuapp.com/
+https://boywondr84.github.io/mern-subscription/
+
+NOTE: Deployed using gh-pages. Signup / Login functionality will not work here, but below is a video showing it does in fact, work properly.
+
+## Video: Signup & Login
+https://watch.screencastify.com/v/HN2msigntv5UYYxE2QVl
 
 ## GitHub Repo:
 https://github.com/Boywondr84/mern-subscription
